@@ -110,7 +110,18 @@ function Input() {
             <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Helmet>
-            <p className="mobile-paragraph">{question.qn}</p>
+            <p style={{
+                fontSize: "1.5rem",
+            }} className="mobile-paragraph">{question.qn}</p>
+            <img style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+            }} src="https://mystery.knightlab.com/schema.png" alt="" />
+            <p style={{
+                fontSize: "1.5rem",
+                marginBottom: "-30px"
+            }} className="mobile-paragraph">Execute Your Query Here</p>
+
             <CodeMirror
                 value={value}
                 style={editorStyle}
@@ -126,7 +137,6 @@ function Input() {
                 </span>
             </button>
 
-            {/* <img src={require()} alt="" /> */}
             
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <p className="mobile-paragraph">Submit Your Answer Here</p>
